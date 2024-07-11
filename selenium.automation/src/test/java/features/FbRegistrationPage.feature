@@ -16,3 +16,10 @@ Feature: Registration for Facebook Application
     Examples: 
       | username        | password | firstname  | surname   |
       | abcd1@gmail.com |    12345 | Prashanthi | Kancharla |
+
+      @Reg_02
+      Scenario: Register with invalid details
+      Given user navigate to Url
+    When Enter invalid username "<username>"
+    And Enter invalid password "<password>"
+    Then User should not register successfully

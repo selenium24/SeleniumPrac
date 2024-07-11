@@ -49,4 +49,19 @@ public class FbRegistration {
 	public void User_should_register_successfully() {
 		
 	}
+	@When("Enter invalid username {string}")
+	public void Enter_invalid_username(String username1) {
+		
+		System.out.println(username1);
+	}
+
+	@And("Enter invalid password {string}")
+	public void Enter_invalid_password(String password1) {
+		
+		System.out.println(password1);
+	}
+	@Then("User should not register successfully")
+	public void User_should_not_register_successfully() {
+		
+	}
 }
