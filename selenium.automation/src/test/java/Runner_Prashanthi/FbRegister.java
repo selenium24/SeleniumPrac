@@ -8,7 +8,7 @@ import io.cucumber.junit.CucumberOptions;
 @RunWith(Cucumber.class)
 @CucumberOptions(features = "src/test/java/features",
 glue = "stepdefinitions",
-tags="@Reg")
+tags="@Reg_01,@Reg_02")
 public class FbRegister {
 
 	
