@@ -20,14 +20,14 @@
 Feature: facebook login
   I want to use this template for my feature file
 
- 
   @tag2
   Scenario Outline: facebook login page
-    Given I want to write a step with <username>
-    When I check for the <password> in step
-    Then I verify the <login> in step
+    Given navigate to fbloginpage
+    When I enter <username>
+    And enter <password>
+    Then I verify the <status>
 
     Examples: 
-      |username |password   | login   |
-      | sruthi  |     1991  | success |
-      | murali  |     1984  | Fail    |
+      | username | password | status  |
+      | sruthi   |     1991 | success |
+      | murali   |     1984 | Fail    |
