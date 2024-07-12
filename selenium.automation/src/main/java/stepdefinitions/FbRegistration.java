@@ -10,13 +10,13 @@ public class FbRegistration {
 		
 	}
 	
-	@When("Enter username {string}")
+	@When("Enter username (.+)")
 	public void Enter_username(String username) {
 		
 		System.out.println(username);
 	}
 
-	@And("Enter new password {string}")
+	@And("Enter new password (.+)")
 	public void Enter_new_password(String password) {
 		
 		System.out.println(password);
@@ -26,12 +26,12 @@ public class FbRegistration {
 	public void Enter_Date_of_birth() {
 		
 	}
-	@And("Enter Firstname {string}")
+	@And("Enter Firstname (.+)")
 	public void Enter_Firstname(String firstname) {
 	
 		System.out.println(firstname);
 	}
-	@And("Enter Surname {string}")
+	@And("Enter Surname (.+)")
 	public void Enter_Surname(String surname) {
 	
 		System.out.println(surname);
